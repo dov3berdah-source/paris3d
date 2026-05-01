@@ -63,7 +63,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // ===== SCROLL ANIMATIONS =====
 const fadeEls = document.querySelectorAll(
-  '.arg-card, .service-card, .client-card, .tarif-card, .avis-card, .contact__method'
+  '.arg-card, .service-card, .client-card, .tarif-card, .avis-card, .contact__method, .step-card, .faq-item'
 );
 fadeEls.forEach(el => el.classList.add('fade-in'));
 
