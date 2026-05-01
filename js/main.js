@@ -1,5 +1,23 @@
 'use strict';
 
+// ===== LOGO FALLBACK =====
+// Show text logo if image fails to load
+function initLogo(imgId, fallbackId) {
+  const img = document.getElementById(imgId);
+  const fallback = document.getElementById(fallbackId);
+  if (!img || !fallback) return;
+  img.addEventListener('error', () => {
+    img.style.display = 'none';
+    fallback.style.display = 'flex';
+  });
+  img.addEventListener('load', () => {
+    img.style.display = 'block';
+    fallback.style.display = 'none';
+  });
+}
+initLogo('logoImg', 'logoText');
+initLogo('footerLogoImg', 'footerLogoText');
+
 // ===== MOBILE MENU =====
 const burger = document.getElementById('burger');
 const nav = document.getElementById('nav');

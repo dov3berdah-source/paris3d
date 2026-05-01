@@ -10,6 +10,7 @@
   <meta property="og:description" content="Intervention rapide 24h/7j. Techniciens certifiés Certibiocide. Punaises de lit, rats, cafards, frelons." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://paris3d.fr" />
+  <meta property="og:image" content="https://paris3d.fr/images/logo.png" />
   <title>Paris 3D — Dératisation & Désinsectisation Paris | Intervention 24h/7j</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,8 +22,11 @@
   <!-- ===== HEADER ===== -->
   <header class="header" id="header">
     <div class="container header__inner">
-      <a href="#accueil" class="logo">
-        <span class="logo__main">PARIS</span><span class="logo__accent">3D</span>
+      <a href="#accueil" class="logo-link" id="headerLogo">
+        <img src="images/logo.png" alt="Paris 3D" class="logo__img" id="logoImg" />
+        <span class="logo logo--fallback" id="logoText">
+          <span class="logo__main">PARIS</span><span class="logo__accent">3D</span>
+        </span>
       </a>
       <nav class="nav" id="nav">
         <a href="#services">Services</a>
@@ -43,7 +47,14 @@
 
   <!-- ===== HERO ===== -->
   <section class="hero" id="accueil">
-    <div class="hero__bg"></div>
+    <div class="hero__bg-img">
+      <img
+        src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&w=1920&q=80"
+        alt="Technicien Paris 3D en intervention"
+        loading="eager"
+      />
+      <div class="hero__bg-overlay"></div>
+    </div>
     <div class="container hero__content">
       <div class="badge badge--urgent">
         <span class="badge__dot"></span>
@@ -171,7 +182,14 @@
       <div class="services__grid">
 
         <div class="service-card" id="deratisation">
-          <div class="service-card__icon service-card__icon--red">🐀</div>
+          <figure class="service-card__photo">
+            <img
+              src="https://images.unsplash.com/photo-1583791031000-9f0c066e5dbf?auto=format&fit=crop&w=700&q=80"
+              alt="Dératisation professionnelle Paris"
+              loading="lazy"
+            />
+            <div class="service-card__photo-overlay"></div>
+          </figure>
           <div class="service-card__content">
             <h3>Dératisation Paris</h3>
             <p class="service-card__problem">Présence de rats ou souris dans votre logement ou commerce ?</p>
@@ -187,7 +205,14 @@
         </div>
 
         <div class="service-card" id="desinsectisation">
-          <div class="service-card__icon service-card__icon--dark">🐜</div>
+          <figure class="service-card__photo">
+            <img
+              src="https://images.unsplash.com/photo-1563461660-3f08d5cd4677?auto=format&fit=crop&w=700&q=80"
+              alt="Désinsectisation cafards fourmis Paris"
+              loading="lazy"
+            />
+            <div class="service-card__photo-overlay"></div>
+          </figure>
           <div class="service-card__content">
             <h3>Désinsectisation Paris</h3>
             <p class="service-card__problem">Cafards, fourmis, blattes, insectes rampants envahissants ?</p>
@@ -204,7 +229,14 @@
 
         <div class="service-card service-card--featured" id="punaises">
           <div class="service-card__badge">Le + demandé</div>
-          <div class="service-card__icon service-card__icon--red">🛏</div>
+          <figure class="service-card__photo">
+            <img
+              src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=700&q=80"
+              alt="Traitement punaises de lit Paris"
+              loading="lazy"
+            />
+            <div class="service-card__photo-overlay"></div>
+          </figure>
           <div class="service-card__content">
             <h3>Punaises de lit Paris</h3>
             <p class="service-card__problem">Infestation rapide, impossible à éradiquer seul sans produits professionnels.</p>
@@ -220,7 +252,14 @@
         </div>
 
         <div class="service-card" id="frelons">
-          <div class="service-card__icon service-card__icon--dark">🐝</div>
+          <figure class="service-card__photo">
+            <img
+              src="https://images.unsplash.com/photo-1518611507436-f9221403cca2?auto=format&fit=crop&w=700&q=80"
+              alt="Destruction nid frelons guêpes Paris"
+              loading="lazy"
+            />
+            <div class="service-card__photo-overlay"></div>
+          </figure>
           <div class="service-card__content">
             <h3>Frelons & Guêpes Paris</h3>
             <p class="service-card__problem">Nid dangereux à proximité de votre habitation ou commerce ?</p>
@@ -235,7 +274,14 @@
         </div>
 
         <div class="service-card" id="desinfection">
-          <div class="service-card__icon service-card__icon--dark">🦠</div>
+          <figure class="service-card__photo">
+            <img
+              src="https://images.unsplash.com/photo-1584820927498-0d83cd3c2cd2?auto=format&fit=crop&w=700&q=80"
+              alt="Désinfection professionnelle Paris"
+              loading="lazy"
+            />
+            <div class="service-card__photo-overlay"></div>
+          </figure>
           <div class="service-card__content">
             <h3>Désinfection Paris</h3>
             <p class="service-card__problem">Bactéries, virus, mauvaises odeurs persistantes dans vos locaux ?</p>
@@ -251,7 +297,14 @@
         </div>
 
         <div class="service-card" id="diogene">
-          <div class="service-card__icon service-card__icon--dark">🧹</div>
+          <figure class="service-card__photo">
+            <img
+              src="https://images.unsplash.com/photo-1558317374-067fb5f30001?auto=format&fit=crop&w=700&q=80"
+              alt="Nettoyage syndrome de Diogène débarras Paris"
+              loading="lazy"
+            />
+            <div class="service-card__photo-overlay"></div>
+          </figure>
           <div class="service-card__content">
             <h3>Syndrome de Diogène & Débarras</h3>
             <p class="service-card__problem">Logement insalubre, encombré, inaccessible ?</p>
@@ -279,32 +332,44 @@
       </div>
       <div class="clients__grid">
         <div class="client-card">
-          <div class="client-card__icon">🏠</div>
+          <div class="client-card__icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
           <h3>Particuliers</h3>
           <p>Appartements, maisons, caves, greniers</p>
         </div>
         <div class="client-card">
-          <div class="client-card__icon">🍽️</div>
+          <div class="client-card__icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          </div>
           <h3>Restaurants</h3>
           <p>Cuisines professionnelles, salles, stockage</p>
         </div>
         <div class="client-card">
-          <div class="client-card__icon">🏨</div>
+          <div class="client-card__icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+          </div>
           <h3>Hôtels</h3>
           <p>Chambres, parties communes, cuisines</p>
         </div>
         <div class="client-card">
-          <div class="client-card__icon">🏢</div>
+          <div class="client-card__icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="2" ry="2"/><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+          </div>
           <h3>Syndics</h3>
           <p>Parties communes, caves, locaux techniques</p>
         </div>
         <div class="client-card">
-          <div class="client-card__icon">🔑</div>
+          <div class="client-card__icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 002 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          </div>
           <h3>Airbnb</h3>
           <p>Intervention discrète entre deux locations</p>
         </div>
         <div class="client-card">
-          <div class="client-card__icon">🏭</div>
+          <div class="client-card__icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.95 11.68 19.79 19.79 0 01.88 3.05 2 2 0 012.86 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
           <h3>Entreprises</h3>
           <p>Bureaux, entrepôts, locaux commerciaux</p>
         </div>
@@ -322,7 +387,10 @@
       </div>
       <div class="tarifs__grid">
         <div class="tarif-card">
-          <div class="tarif-card__service">🐀 Dératisation</div>
+          <figure class="tarif-card__photo">
+            <img src="https://images.unsplash.com/photo-1583791031000-9f0c066e5dbf?auto=format&fit=crop&w=400&q=70" alt="Dératisation" loading="lazy" />
+          </figure>
+          <div class="tarif-card__service">Dératisation</div>
           <div class="tarif-card__price">
             <span class="tarif-card__from">À partir de</span>
             <span class="tarif-card__amount">180€</span>
@@ -332,7 +400,10 @@
           <a href="tel:0652707699" class="btn btn--outline-dark">Obtenir un devis</a>
         </div>
         <div class="tarif-card">
-          <div class="tarif-card__service">🐜 Désinsectisation</div>
+          <figure class="tarif-card__photo">
+            <img src="https://images.unsplash.com/photo-1563461660-3f08d5cd4677?auto=format&fit=crop&w=400&q=70" alt="Désinsectisation" loading="lazy" />
+          </figure>
+          <div class="tarif-card__service">Désinsectisation</div>
           <div class="tarif-card__price">
             <span class="tarif-card__from">À partir de</span>
             <span class="tarif-card__amount">150€</span>
@@ -343,7 +414,10 @@
         </div>
         <div class="tarif-card tarif-card--featured">
           <div class="tarif-card__badge">Traitement complet</div>
-          <div class="tarif-card__service">🛏 Punaises de lit</div>
+          <figure class="tarif-card__photo">
+            <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=400&q=70" alt="Punaises de lit" loading="lazy" />
+          </figure>
+          <div class="tarif-card__service">Punaises de lit</div>
           <div class="tarif-card__price">
             <span class="tarif-card__from">À partir de</span>
             <span class="tarif-card__amount">400€</span>
@@ -353,7 +427,10 @@
           <a href="tel:0652707699" class="btn btn--primary">Intervention urgente</a>
         </div>
         <div class="tarif-card">
-          <div class="tarif-card__service">🦠 Désinfection</div>
+          <figure class="tarif-card__photo">
+            <img src="https://images.unsplash.com/photo-1584820927498-0d83cd3c2cd2?auto=format&fit=crop&w=400&q=70" alt="Désinfection" loading="lazy" />
+          </figure>
+          <div class="tarif-card__service">Désinfection</div>
           <div class="tarif-card__price">
             <span class="tarif-card__from">À partir de</span>
             <span class="tarif-card__amount">150€</span>
@@ -460,14 +537,38 @@
         <h2>Paris et toute l'Île-de-France</h2>
         <p>Nos équipes interviennent rapidement dans Paris intra-muros et dans toute l'Île-de-France. Délai d'intervention garanti.</p>
         <div class="zone__list">
-          <span>📍 Paris (tous arrondissements)</span>
-          <span>📍 Hauts-de-Seine</span>
-          <span>📍 Val-de-Marne</span>
-          <span>📍 Seine-Saint-Denis</span>
-          <span>📍 Yvelines</span>
-          <span>📍 Essonne</span>
-          <span>📍 Val-d'Oise</span>
-          <span>📍 Seine-et-Marne</span>
+          <span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--red)" stroke="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Paris (tous arrondissements)
+          </span>
+          <span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--red)" stroke="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Hauts-de-Seine
+          </span>
+          <span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--red)" stroke="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Val-de-Marne
+          </span>
+          <span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--red)" stroke="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Seine-Saint-Denis
+          </span>
+          <span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--red)" stroke="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Yvelines
+          </span>
+          <span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--red)" stroke="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Essonne
+          </span>
+          <span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--red)" stroke="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Val-d'Oise
+          </span>
+          <span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--red)" stroke="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Seine-et-Marne
+          </span>
         </div>
       </div>
       <div class="zone__cta">
@@ -535,12 +636,12 @@
             <label for="service">Type de nuisible *</label>
             <select id="service" name="service" required>
               <option value="">Sélectionnez un service</option>
-              <option value="deratisation">🐀 Dératisation (rats, souris)</option>
-              <option value="desinsectisation">🐜 Désinsectisation (cafards, fourmis)</option>
-              <option value="punaises">🛏 Punaises de lit</option>
-              <option value="frelons">🐝 Frelons / Guêpes</option>
-              <option value="desinfection">🦠 Désinfection</option>
-              <option value="diogene">🧹 Syndrome de Diogène / Débarras</option>
+              <option value="deratisation">Dératisation (rats, souris)</option>
+              <option value="desinsectisation">Désinsectisation (cafards, fourmis)</option>
+              <option value="punaises">Punaises de lit</option>
+              <option value="frelons">Frelons / Guêpes</option>
+              <option value="desinfection">Désinfection</option>
+              <option value="diogene">Syndrome de Diogène / Débarras</option>
               <option value="autre">Autre</option>
             </select>
           </div>
@@ -571,8 +672,11 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <a href="#accueil" class="logo">
-          <span class="logo__main">PARIS</span><span class="logo__accent">3D</span>
+        <a href="#accueil" class="logo-link footer__logo-link" id="footerLogo">
+          <img src="images/logo.png" alt="Paris 3D" class="logo__img logo__img--footer" id="footerLogoImg" />
+          <span class="logo logo--fallback" id="footerLogoText">
+            <span class="logo__main">PARIS</span><span class="logo__accent">3D</span>
+          </span>
         </a>
         <p>Expert en lutte contre les nuisibles à Paris et en Île-de-France. Techniciens certifiés Certibiocide. Intervention rapide 24h/7j.</p>
         <a href="tel:0652707699" class="footer__phone">06 52 70 76 99</a>
